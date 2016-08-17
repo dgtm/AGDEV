@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "AGDEV",
+  "version": "0.1",
+  "browser_action": {
+    "default_icon": "agrian_logo.png",
+    "default_popup": "background.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["jquery-3.0.0.min.js", "content.js"]
+    }
+  ]
+}
