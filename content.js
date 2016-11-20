@@ -10,4 +10,9 @@ $(document).ready(function(){
       chrome.runtime.sendMessage({"message": "open_new_tab", "url": url});
     });
 
+    $('#jira_dashbard').click(function(e){
+      var url = e.target.href;
+      chrome.runtime.sendMessage({"message": "open_new_tab", "url": url});
+    });
+
 });
